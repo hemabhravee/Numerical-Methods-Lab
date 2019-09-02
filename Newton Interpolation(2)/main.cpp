@@ -1,11 +1,12 @@
 /*
-Title - Newton Polynomial
+Title - Newton Polynomial(2)
 Author - Hemabh Ravee (IMH/10042/17)
 Lab - Numerical Methods Lab - 5
 */
 #include<stdio.h>
+#include<math.h>
 
-float newton(float x[],float y[], float a, int n)
+float newton(float x[],float y[], float xTest[], int n,int m)
 {
 	float D[n][n];
 	int i,j,k;
@@ -30,8 +31,8 @@ float newton(float x[],float y[], float a, int n)
 		
 	float sum, prod;
 	
-	//Creating newton's polynomials
-	for(i=0;i<n;i++)
+	//Looping testing points
+	for(i=0;i<m;i++) 
 	{
 		sum=D[0][0];		
 		for(j=1;j<i;j++)
@@ -39,29 +40,47 @@ float newton(float x[],float y[], float a, int n)
 			prod = 1;
 			for(k=0;k<j;k++)
 			{
-				prod*=(a-x[k]);
+				prod*=(xTest[i]-x[k]);
 			}
 			sum+=D[j][j]*prod;
 			
 		}
-		
-		printf("\nValue of f(%f) from polynomial %d is : %f",a,i,sum);
+		printf("\nError in %dth term, i.e. in f(%f) is : %f",i+1,xTest[i],sum-atan(xTest[i]));
 	}
 }
 
 int main()
 {
 	//defining array size
-    int n = 7;
+    int n = 11;
+    int m = 33;
     
-    float x[n]={1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3};
-    float y[n]={5.474, 6.050, 6.686, 7.8166, 9.025, 9.974};
-    
-    float x1 = 1.85;
-    float x2 = 2.25;
-    newton(x,y,x1,n);
-    newton(x,y,x2,n);
-
+    float xTrain[n];
+    float y[n];
         
-   
+    float a=0;
+    float b=6;
+    int i;
+    
+    for(i=0;i<n;i++)
+    {
+    	xTrain[i] = a + i*(b-a)/n;
+    	y[i] = atan(xTrain[i]);
+    	//printf("%f\t%f\n",xTrain[i],y[i]);
+	}
+	
+	float xTest[m];
+	
+	float c = 0;
+	float d = 8;
+	
+	for(i=0;i<m;i++)
+	{
+		xTest[i] = c + i*(d-c)/m;
+	}
+	
+    
+    float x1 = 1;
+    newton(xTrain,y,xTest,n,m);
+  
 }
