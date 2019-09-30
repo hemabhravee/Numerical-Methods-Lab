@@ -35,9 +35,6 @@ Codes for the numerical method lab (IMSc Math)
 Newton Interpolation
 http://mathfaculty.fullerton.edu/mathews/n2003/newtonpoly/NewtonPolyProof.pdf
 
-### ASSIGNMENT 6
-1. Using Hermite Polynomial to approximate the value of a function.
-
 ### ASSIGNMENT 7
 <img src="/Assignments/A7.jpg" alt="Assignment 7"/>
 
