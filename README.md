@@ -22,6 +22,9 @@ Codes for the numerical method lab (IMSc Math)
 
 ### ASSIGNMENT 5
 <img src="/Assignments/A5.jpg" alt="Assignment 5"/>
+1. Using Lagrange's Interpolation formula to estimate the value of `y` using a given table.
+2. Using Newton's Interpolation formula to estimate the same.
+[Newton Interpolation](http://mathfaculty.fullerton.edu/mathews/n2003/newtonpoly/NewtonPolyProof.pdf) Method.
 Newton Interpolation
 http://mathfaculty.fullerton.edu/mathews/n2003/newtonpoly/NewtonPolyProof.pdf
 
