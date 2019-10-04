@@ -8,3 +8,4 @@ Switch to branch using `git checkout branch` and replace "branch" by branch name
 The codes written for this repository should only be written in C/C++ as required by the curriculum.
 
 Try to comment while writing the code so that others can find it easy to understand the method used for solving a particular problem.
+
