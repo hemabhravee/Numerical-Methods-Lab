@@ -4,3 +4,7 @@ This repository is made to provide solutions to Numerical Methods Lab Assignment
 
 First clone this repository using `git clone` on your system and create a branch to make any changes.
 Switch to branch using `git checkout branch` and replace "branch" by branch name.
+
+The codes written for this repository should only be written in C/C++ as required by the curriculum.
+
+Try to comment while writing the code so that others can find it easy to understand the method used for solving a particular problem.
