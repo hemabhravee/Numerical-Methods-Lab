@@ -1,5 +1,5 @@
 /*
-Title - Fixed Point Iteration-2
+Title - Fixed Point Iteration-3
 Author - Hemabh Ravee (IMH/10042/17)
 Lab - Numerical Methods Lab - 3
 */
