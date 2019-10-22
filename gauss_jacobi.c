@@ -41,6 +41,4 @@ float main()
     }while(i<iter);
 
     printf("\nNumber of iterations : %i",i);
-
-    double l = 1/10;
  }
